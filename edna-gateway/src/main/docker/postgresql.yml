@@ -1,0 +1,12 @@
+version: '2'
+services:
+    ednagateway-postgresql:
+        container_name: ednagateway-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/ednagateway/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=ednagateway
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

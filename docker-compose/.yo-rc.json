@@ -1,0 +1,13 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "edna-api",
+      "edna-gateway",
+      "uaa"
+    ],
+    "directoryPath": "../",
+    "useElk": true,
+    "adminPassword": "admin",
+    "jwtSecretKey": "3c54302f84f45824f921ac548124fef6fada7c10"
+  }
+}

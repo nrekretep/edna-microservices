@@ -1,0 +1,159 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ednagateway 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ednagateway ---
+[INFO] Deleting C:\Users\peter\jhipster\edna-gateway\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:copy-resources (default-resources) @ ednagateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 8 resources
+[INFO] Copying file config\application-dev.yml
+[INFO] Copying file config\application-prod.yml
+[INFO] Copying file config\application.yml
+[INFO] Copying file config\bootstrap-dev.yml
+[INFO] Copying file config\bootstrap-prod.yml
+[INFO] Copying file config\liquibase\changelog\00000000000000_initial_schema.xml
+[INFO] Copying file config\liquibase\master.xml
+[INFO] Copying file logback-spring.xml
+[INFO] ignoreDelta true
+[INFO] Copying 9 resources
+[INFO] Copying file banner.txt
+[INFO] Copying file config\cql\changelog\README.md
+[INFO] Copying file config\cql\create-keyspace-prod.cql
+[INFO] Copying file config\cql\create-keyspace.cql
+[INFO] Copying file config\cql\drop-keyspace.cql
+[INFO] Copying file i18n\messages.properties
+[INFO] Copying file i18n\messages_de.properties
+[INFO] Copying file i18n\messages_en.properties
+[INFO] Copying file templates\error.html
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:resources (default-resources) @ ednagateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 8 resources
+[INFO] Copying file config\application-dev.yml
+[INFO] Copying file config\application-prod.yml
+[INFO] Copying file config\application.yml
+[INFO] Copying file config\bootstrap-dev.yml
+[INFO] Copying file config\bootstrap-prod.yml
+[INFO] Copying file config\liquibase\changelog\00000000000000_initial_schema.xml
+[INFO] Copying file config\liquibase\master.xml
+[INFO] Copying file logback-spring.xml
+[INFO] ignoreDelta true
+[INFO] Copying 9 resources
+[INFO] Copying file banner.txt
+[INFO] Copying file config\cql\changelog\README.md
+[INFO] Copying file config\cql\create-keyspace-prod.cql
+[INFO] Copying file config\cql\create-keyspace.cql
+[INFO] Copying file config\cql\drop-keyspace.cql
+[INFO] Copying file i18n\messages.properties
+[INFO] Copying file i18n\messages_de.properties
+[INFO] Copying file i18n\messages_en.properties
+[INFO] Copying file templates\error.html
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ ednagateway ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (pre-unit-tests) @ ednagateway ---
+[INFO] surefireArgLine set to -javaagent:C:\\Users\\peter\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.7.6.201602180812\\org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=C:\\Users\\peter\\jhipster\\edna-gateway\\target\\test-results\\coverage\\jacoco\\jacoco.exec
+[INFO] 
+[INFO] --- maven-processor-plugin:2.2.4:process (process) @ ednagateway ---
+[WARNING] diagnostic: warning: The following options were not recognized by any processor: '[mapstruct.defaultComponentModel, mapstruct.suppressGeneratorTimestamp]'
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ednagateway ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 71 source files to C:\Users\peter\jhipster\edna-gateway\target\classes
+[WARNING] /C:/Users/peter/jhipster/edna-gateway/src/main/java/net/nomagic/edna/gateway/gateway/responserewriting/SwaggerBasePathRewritingFilter.java: Some input files use unchecked or unsafe operations.
+[WARNING] /C:/Users/peter/jhipster/edna-gateway/src/main/java/net/nomagic/edna/gateway/gateway/responserewriting/SwaggerBasePathRewritingFilter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.0:testResources (default-testResources) @ ednagateway ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ignoreDelta true
+[INFO] Copying 2 resources
+[INFO] Copying file config\application.yml
+[INFO] Copying file logback-test.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ednagateway ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Users\peter\jhipster\edna-gateway\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ ednagateway ---
+[INFO] Surefire report directory: C:\Users\peter\jhipster\edna-gateway\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.nomagic.edna.gateway.gateway.responserewriting.SwaggerBasePathRewritingFilterTest
+2016-07-03 23:05:55.242  WARN   --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-07-03 23:05:55.667 DEBUG   --- [           main] n.e.g.g.r.SwaggerBasePathRewritingFilter : Swagger-docs: rewritten Base URL with correct micro-service route: /service1
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.846 sec - in net.nomagic.edna.gateway.gateway.responserewriting.SwaggerBasePathRewritingFilterTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:report (post-unit-test) @ ednagateway ---
+[INFO] Analyzed bundle 'Ednagateway' with 95 classes
+[INFO] 
+[INFO] --- maven-war-plugin:2.5:war (default-war) @ ednagateway ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [ednagateway] in [C:\Users\peter\jhipster\edna-gateway\target\ednagateway-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\peter\jhipster\edna-gateway\src\main\webapp]
+[INFO] Webapp assembled in [17710 msecs]
+[INFO] Building war: C:\Users\peter\jhipster\edna-gateway\target\ednagateway-0.0.1-SNAPSHOT.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.3.5.RELEASE:repackage (default) @ ednagateway ---
+[INFO] 
+[INFO] --- docker-maven-plugin:0.4.5:build (default-cli) @ ednagateway ---
+[INFO] Copying C:\Users\peter\jhipster\edna-gateway\target\ednagateway-0.0.1-SNAPSHOT.war -> C:\Users\peter\jhipster\edna-gateway\target\docker\ednagateway-0.0.1-SNAPSHOT.war
+[INFO] Copying src\main\docker\app.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\app.yml
+[INFO] Copying src\main\docker\cassandra\Cassandra-Migration.Dockerfile -> C:\Users\peter\jhipster\edna-gateway\target\docker\cassandra\Cassandra-Migration.Dockerfile
+[INFO] Copying src\main\docker\cassandra\scripts\autoMigrate.sh -> C:\Users\peter\jhipster\edna-gateway\target\docker\cassandra\scripts\autoMigrate.sh
+[INFO] Copying src\main\docker\cassandra\scripts\execute-cql.sh -> C:\Users\peter\jhipster\edna-gateway\target\docker\cassandra\scripts\execute-cql.sh
+[INFO] Copying src\main\docker\cassandra-cluster.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\cassandra-cluster.yml
+[INFO] Copying src\main\docker\cassandra-migration.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\cassandra-migration.yml
+[INFO] Copying src\main\docker\cassandra.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\cassandra.yml
+[INFO] Copying src\main\docker\central-server-config\application.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\central-server-config\application.yml
+[INFO] Copying src\main\docker\Dockerfile -> C:\Users\peter\jhipster\edna-gateway\target\docker\Dockerfile
+[INFO] Copying src\main\docker\jhipster-registry.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\jhipster-registry.yml
+[INFO] Copying src\main\docker\postgresql.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\postgresql.yml
+[INFO] Copying src\main\docker\sonar.yml -> C:\Users\peter\jhipster\edna-gateway\target\docker\sonar.yml
+[INFO] Building image localhost:5000/ednagateway
+Step 1 : FROM java:openjdk-8-jre-alpine
+ ---> cc37a2b2511d
+Step 2 : ENV JHIPSTER_SLEEP 0
+ ---> Using cache
+ ---> 2e9f13b4f666
+Step 3 : ADD *.war /app.war
+ ---> e5cb79bc386b
+Removing intermediate container 69ae259def1f
+Step 4 : RUN sh -c 'touch /app.war'
+ ---> Running in 0e4901d2e7d9
+ ---> 5f2e7da8ce7a
+Removing intermediate container 0e4901d2e7d9
+Step 5 : VOLUME /tmp
+ ---> Running in 3391a2b4fafe
+ ---> b1c93443d2ec
+Removing intermediate container 3391a2b4fafe
+Step 6 : EXPOSE 8080
+ ---> Running in 55bb4e98d832
+ ---> 9b6e455bcce8
+Removing intermediate container 55bb4e98d832
+Step 7 : CMD echo "The application will start in ${JHIPSTER_SLEEP}s..." &&     sleep ${JHIPSTER_SLEEP} &&     java -Djava.security.egd=file:/dev/./urandom -jar /app.war
+ ---> Running in 5266e3d3dc6f
+ ---> 690cd7aadb56
+Removing intermediate container 5266e3d3dc6f
+Successfully built 690cd7aadb56
+[INFO] Built localhost:5000/ednagateway
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50.922 s
+[INFO] Finished at: 2016-07-03T23:06:34+02:00
+[INFO] Final Memory: 76M/775M
+[INFO] ------------------------------------------------------------------------

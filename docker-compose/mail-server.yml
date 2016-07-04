@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+    mail:
+        image: tvial/docker-mailserver:latest
+        # build: .
+        hostname: mail
+        domainname: jhipster.mail 
+        container_name: mail
+        ports:
+            - "25:25"
+            - "143:143"
+            - "587:587"
+            - "993:993"
+        volumes:
+            - maildata:/var/mail
+            - ./config/:/tmp/docker-mailserver/
+        environment:
+            - MAIL_USER=peter@jhipster.mail
+            - MAIL_PASS=mypassword 
+volumes:
+    maildata:
+        driver: local
